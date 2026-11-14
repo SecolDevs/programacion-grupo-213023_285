@@ -1,0 +1,205 @@
+11/11/2026 15:06:09 | INFO     | <module>               | Sistema Software FJ iniciado
+11/11/2026 15:06:09 | WARNING  | <module>               | Clase abstracta no instanciable Entidad
+11/11/2026 15:06:09 | WARNING  | <module>               | Clase abstracta no instanciable Servicio
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM01 inicio, Registrar cliente válido, Ana María Torres
+11/11/2026 15:06:09 | INFO     | __init__               | Cliente creado con id CLI0001
+11/11/2026 15:06:09 | INFO     | registrar_cliente      | Cliente CLI0001 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM01 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM01 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM02 inicio, Cliente válido con +57, puntos en el documento y correo en mayúsculas
+11/11/2026 15:06:09 | INFO     | __init__               | Cliente creado con id CLI0002
+11/11/2026 15:06:09 | INFO     | registrar_cliente      | Cliente CLI0002 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM02 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM02 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM03 inicio, Cliente con correo mal formado
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM03 fallo controlado DatoInvalidoError, [SFJ101] correo: no tiene un formato válido
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM03 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM04 inicio, Cliente con teléfono que contiene letras
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM04 fallo controlado DatoInvalidoError, [SFJ101] teléfono: debe ser un celular colombiano de 10 dígitos que empieza por 3, con +57 opcional
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM04 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM05 inicio, Cliente con nombre vacío
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM05 fallo controlado DatoInvalidoError, [SFJ101] nombre: no puede estar vacío
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM05 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM06 inicio, Cliente con documento repetido
+11/11/2026 15:06:09 | INFO     | __init__               | Cliente creado con id CLI0003
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM06 fallo controlado EntidadDuplicadaError, [SFJ202] registrar cliente: ya existe un cliente con ese documento
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM06 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM07 inicio, Cambiar teléfono con el setter, dato válido
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM07 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM07 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM08 inicio, Cambiar teléfono con el setter, dato inválido
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM08 fallo controlado DatoInvalidoError, [SFJ101] teléfono: debe tener entre 10 y 16 caracteres
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM08 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM09 inicio, Registrar sala Innovación con capacidad para 10 personas
+11/11/2026 15:06:09 | INFO     | __init__               | Servicio creado con id SRV0001, tipo Reserva de sala
+11/11/2026 15:06:09 | INFO     | registrar_servicio     | Servicio SRV0001 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM09 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM09 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM10 inicio, Registrar alquiler de portátiles, 3 unidades en inventario
+11/11/2026 15:06:09 | INFO     | __init__               | Servicio creado con id SRV0002, tipo Alquiler de equipo
+11/11/2026 15:06:09 | INFO     | registrar_servicio     | Servicio SRV0002 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM10 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM10 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM11 inicio, Registrar asesoría en arquitectura con 10 horas libres
+11/11/2026 15:06:09 | INFO     | __init__               | Servicio creado con id SRV0003, tipo Asesoría especializada
+11/11/2026 15:06:09 | INFO     | registrar_servicio     | Servicio SRV0003 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM11 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM11 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM12 inicio, Registrar sala Auditorio, fuera de servicio por mantenimiento
+11/11/2026 15:06:09 | INFO     | __init__               | Servicio creado con id SRV0004, tipo Reserva de sala
+11/11/2026 15:06:09 | INFO     | registrar_servicio     | Servicio SRV0004 registrado en el gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM12 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM12 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM13 inicio, Servicio con precio negativo
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM13 fallo controlado DatoInvalidoError, [SFJ101] tarifa por hora: debe ser mayor que cero
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM13 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM14 inicio, Servicio repetido, misma sala con el nombre en minúsculas
+11/11/2026 15:06:09 | INFO     | __init__               | Servicio creado con id SRV0005, tipo Reserva de sala
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM14 fallo controlado EntidadDuplicadaError, [SFJ202] registrar servicio: ya existe un servicio con ese tipo y nombre
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM14 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM15 inicio, Sala con capacidad cero
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM15 fallo controlado DatoInvalidoError, [SFJ101] capacidad: debe ser al menos 1
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM15 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM16 inicio, Sobrecarga de calcular_costo con la sala de 2 horas
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM16 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM16 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM17 inicio, Polimorfismo con tres servicios y 2 horas
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM17 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM17 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM18 inicio, Descuento escrito con letras
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM18 fallo controlado DatoInvalidoError, [SFJ101] descuento: debe ser un número | causa original ValueError: could not convert string to float: 'diez'
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM18 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM19 inicio, Cálculo inconsistente, descuento de 150 por ciento
+11/11/2026 15:06:09 | ERROR    | ejecutar               | SIM19 fallo controlado CalculoInconsistenteError, [SFJ401] el descuento de 150 por ciento queda fuera del rango de 0 a 100
+Traceback (most recent call last):
+  File "/tmp/ipykernel_167/3755966581.py", line 25, in ejecutar
+    valor = operacion()
+  File "/tmp/ipykernel_167/2063413161.py", line 39, in sim_descuento_150
+    gestor.buscar_servicio(ids["sala"]).calcular_costo(2, {"asistentes": 6}, descuento=150)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_167/1845115964.py", line 90, in calcular_costo
+    return self.desglosar_costo(horas, parametros, con_iva, descuento, adicionales)["total"]
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ipykernel_167/1845115964.py", line 71, in desglosar_costo
+    raise CalculoInconsistenteError(
+        f"el descuento de {porcentaje:g} por ciento queda fuera del rango de 0 a 100"
+    )
+CalculoInconsistenteError: [SFJ401] el descuento de 150 por ciento queda fuera del rango de 0 a 100
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM19 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM20 inicio, Reserva de sala, ciclo completo hasta procesar
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0001 creada para cliente CLI0001 y servicio SRV0001
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0001 registrada en el gestor
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0001 pasó de pendiente a confirmada
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0001 pasó de confirmada a procesada
+11/11/2026 15:06:09 | INFO     | procesar               | Intento de procesar RES0001 terminado, estado procesada
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM20 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM20 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM21 inicio, Reserva con cero horas
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM21 fallo controlado DatoInvalidoError, [SFJ101] horas: debe ser mayor que cero
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM21 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM22 inicio, Reserva con la duración escrita en letras
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM22 fallo controlado DatoInvalidoError, [SFJ101] horas: debe ser un número | causa original ValueError: could not convert string to float: 'dos'
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM22 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM23 inicio, Reserva de 30 horas, supera el máximo permitido
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM23 fallo controlado ReservaInvalidaError, [SFJ301] una reserva no puede superar 12 horas y se pidieron 30
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM23 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM24 inicio, Reserva con capacidad excedida, 40 personas en una sala de 10
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM24 fallo controlado ServicioNoDisponibleError, [SFJ302] Sala Innovación: la sala admite 10 personas y se pidieron 40
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM24 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM25 inicio, Alquiler de equipo sin indicar las unidades
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM25 fallo controlado ParametroFaltanteError, [SFJ102] falta 'unidades' para alquilar Portátil de alto rendimiento | causa original KeyError: 'unidades'
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM25 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM26 inicio, Asesoría con un nivel que no existe
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM26 fallo controlado DatoInvalidoError, [SFJ101] nivel: debe ser uno de (junior, senior, experto) | causa original KeyError: 'maestro'
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM26 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM27 inicio, Reserva para un cliente que no existe
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM27 fallo controlado EntidadNoEncontradaError, [SFJ501] no existe cliente con id CLI9999 | causa original ValueError: 'CLI9999' is not in list
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM27 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM28 inicio, Confirmar reserva de un servicio fuera de servicio
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0002 creada para cliente CLI0002 y servicio SRV0004
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0002 registrada en el gestor
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM28 fallo controlado ServicioNoDisponibleError, [SFJ302] Sala Auditorio: está fuera de servicio por ahora
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM28 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM29 inicio, Confirmar alquiler de 5 equipos con solo 3 en inventario
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0003 creada para cliente CLI0002 y servicio SRV0002
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0003 registrada en el gestor
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM29 fallo controlado ServicioNoDisponibleError, [SFJ302] Portátil de alto rendimiento: no tiene recursos libres para lo solicitado
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM29 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM30 inicio, Alquiler confirmado y luego cancelado
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0004 creada para cliente CLI0002 y servicio SRV0002
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0004 registrada en el gestor
+11/11/2026 15:06:09 | INFO     | ocupar                 | Equipo SRV0002 ocupado, quedan 1 unidades
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0004 pasó de pendiente a confirmada
+11/11/2026 15:06:09 | INFO     | liberar                | Equipo SRV0002 liberado, quedan 3 unidades
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0004 pasó de confirmada a cancelada
+11/11/2026 15:06:09 | INFO     | cancelar               | Reserva RES0004 cancelada, el cliente cambió de planes
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM30 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM30 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM31 inicio, Confirmar dos veces la misma reserva
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0005 creada para cliente CLI0001 y servicio SRV0003
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0005 registrada en el gestor
+11/11/2026 15:06:09 | INFO     | ocupar                 | Asesoría SRV0003 ocupada, quedan 8.0 horas
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0005 pasó de pendiente a confirmada
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM31 fallo controlado OperacionNoPermitidaError, [SFJ201] no se permite confirmar RES0005 porque ya está confirmada
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM31 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM32 inicio, Cancelar una reserva que ya fue procesada
+11/11/2026 15:06:09 | WARNING  | ejecutar               | SIM32 fallo controlado OperacionNoPermitidaError, [SFJ201] no se permite cancelar RES0001 porque está procesada y ese es un estado final
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM32 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM33 inicio, Procesar una reserva con descuento de 150 por ciento
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0006 creada para cliente CLI0002 y servicio SRV0001
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0006 registrada en el gestor
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0006 pasó de pendiente a confirmada
+11/11/2026 15:06:09 | INFO     | procesar               | Intento de procesar RES0006 terminado, estado confirmada
+11/11/2026 15:06:09 | ERROR    | ejecutar               | SIM33 fallo controlado ReservaInvalidaError, [SFJ301] no se pudo calcular el total de RES0006 | causa original CalculoInconsistenteError: [SFJ401] el descuento de 150 por ciento queda fuera del rango de 0 a 100
+Traceback (most recent call last):
+  File "/tmp/ipykernel_167/274531107.py", line 114, in procesar
+    desglose = self.calcular_total()
+  File "/tmp/ipykernel_167/274531107.py", line 81, in calcular_total
+    return self._servicio.desglosar_costo(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._horas, self._parametros, self._con_iva, self._descuento, self._adicionales
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/tmp/ipykernel_167/1845115964.py", line 71, in desglosar_costo
+    raise CalculoInconsistenteError(
+        f"el descuento de {porcentaje:g} por ciento queda fuera del rango de 0 a 100"
+    )
+CalculoInconsistenteError: [SFJ401] el descuento de 150 por ciento queda fuera del rango de 0 a 100
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/tmp/ipykernel_167/3755966581.py", line 25, in ejecutar
+    valor = operacion()
+  File "/tmp/ipykernel_167/3710779592.py", line 74, in sim_procesar_descuento_imposible
+    res.procesar()
+    ~~~~~~~~~~~~^^
+  File "/tmp/ipykernel_167/274531107.py", line 116, in procesar
+    raise ReservaInvalidaError(
+        f"no se pudo calcular el total de {self.obtener_id()}", grave=True
+    ) from exc
+ReservaInvalidaError: [SFJ301] no se pudo calcular el total de RES0006
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM33 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM34 inicio, Asesoría nivel senior con IVA, ciclo completo
+11/11/2026 15:06:09 | INFO     | __init__               | Reserva RES0007 creada para cliente CLI0001 y servicio SRV0003
+11/11/2026 15:06:09 | INFO     | crear_reserva          | Reserva RES0007 registrada en el gestor
+11/11/2026 15:06:09 | INFO     | ocupar                 | Asesoría SRV0003 ocupada, quedan 5.0 horas
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0007 pasó de pendiente a confirmada
+11/11/2026 15:06:09 | INFO     | _cambiar_estado        | Reserva RES0007 pasó de confirmada a procesada
+11/11/2026 15:06:09 | INFO     | procesar               | Intento de procesar RES0007 terminado, estado procesada
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM34 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM34 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM35 inicio, Error de programación, acceder a la reserva 99 de la lista
+11/11/2026 15:06:09 | ERROR    | ejecutar               | SIM35 error inesperado IndexError: tuple index out of range, la aplicación continúa
+Traceback (most recent call last):
+  File "/tmp/ipykernel_167/3755966581.py", line 25, in ejecutar
+    valor = operacion()
+  File "/tmp/ipykernel_167/367048319.py", line 2, in sim_error_imprevisto
+    return gestor.obtener_reservas()[99]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^
+IndexError: tuple index out of range
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM35 fin
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM36 inicio, Reporte final del gestor
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM36 exitosa
+11/11/2026 15:06:09 | INFO     | ejecutar               | SIM36 fin
