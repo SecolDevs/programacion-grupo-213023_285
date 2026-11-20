@@ -61,18 +61,18 @@ El cuaderno usa estos mecanismos.
 
 ## Simulaciones
 
-El cuaderno corre 36 operaciones sobre un mismo gestor, unas válidas y otras inválidas, y ninguna detiene la aplicación.
+El cuaderno corre 38 operaciones sobre un mismo gestor, unas válidas y otras inválidas, y ninguna detiene la aplicación. Las 38 coinciden con el resultado esperado.
 
 | Grupo | Operaciones | Exitosas | Fallos controlados | Errores imprevistos atrapados |
 | --- | --- | --- | --- | --- |
 | Clientes | 8 | 3 | 5 | 0 |
 | Servicios | 7 | 4 | 3 | 0 |
 | Costos y polimorfismo | 4 | 2 | 2 | 0 |
-| Reservas | 15 | 3 | 12 | 0 |
+| Reservas | 17 | 4 | 13 | 0 |
 | Error imprevisto y reporte | 2 | 1 | 0 | 1 |
-| Total | 36 | 13 | 22 | 1 |
+| Total | 38 | 14 | 23 | 1 |
 
-El log registra cada operación con fecha, hora, nivel, función y mensaje. INFO guarda lo que salió bien, WARNING los fallos de datos o de reglas y ERROR los fallos graves o imprevistos con su traceback.
+El log registra cada operación con fecha, hora, nivel, función y mensaje. INFO guarda lo que salió bien, WARNING los fallos de datos o de reglas y ERROR los fallos graves o imprevistos con su traceback. La última ejecución completa, en Python 3.13, dejó 220 líneas en `software_fj.log`, con 144 INFO, 23 WARNING y 3 ERROR.
 
 ## Flujo de trabajo del grupo
 
@@ -80,5 +80,9 @@ Cada integrante trabaja en su propia rama, sube commits descriptivos y abre un p
 
 ## Integrantes
 
-- Yordi Sebastián Colón Cárdenas
-- Cristian Acuña
+| Integrante | Usuario de GitHub | Aporte en el repositorio |
+| --- | --- | --- |
+| Yordi Sebastián Colón Cárdenas | [SecolDevs](https://github.com/SecolDevs) | Versión inicial del cuaderno, README, guía de colaboración y comentarios del logging y las excepciones (#1, #2, #3) |
+| Sara Valerie Ortiz Moreno | [09valeriamoreno09-ops](https://github.com/09valeriamoreno09-ops) | Comentarios de las clases Cliente y Servicio y de los servicios concretos (#4, PR #9) |
+| Juan Sebastián Prieto Trujillo | [JuansePrieto](https://github.com/JuansePrieto) | Simulaciones de reservas de asesorías (#5, PR #10) |
+| Cristian Andrés Acuña Sequeda | | Plantilla del informe de la Fase 4 |
